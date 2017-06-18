@@ -7,3 +7,9 @@ Docker machine, set related environment variables and updates PROMPT to reflect 
 - dm-deactivate stops current running Docker machine and unsets environment.
 
 - dm alias for docker-machine
+
+## Installation
+
+- To install in oh-my-zsh clone this repo into
+ ~/.oh-my-zsh/plugins and add docker-machine to the plugins section of your zshrc.  
+- If you're not using oh-my-zsh then source this file in your zshrc by adding "source /path/to/docker-machine.zsh.plugin"
