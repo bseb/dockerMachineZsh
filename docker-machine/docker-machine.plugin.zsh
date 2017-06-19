@@ -36,7 +36,7 @@ dm-create(){
     echo -e "Unable to create machine $machineName. Has it already been created?"
   else
     eval $(docker-machine env $machineName)
-    PROMPT=" (🐳  ${activeMachine} ) $PROMPT"
+    PROMPT=" (🐳  ${machineName} ) $PROMPT"
     echo -e "$machineName created and environment setup"
   fi
 
