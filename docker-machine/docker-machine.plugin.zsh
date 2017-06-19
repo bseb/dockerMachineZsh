@@ -28,3 +28,17 @@ dm-deactivate(){
     echo -e "Unable to determine active machine. Is a machine really running?"
   fi
 }
+
+dm-create(){
+  machineName=$1
+  docker-machine create $machineName
+  if [[ $? -ne 0 ]]; then
+    echo -e "Unable to create machine $machineName. Has it already been created?"
+  else
+    eval $(docker-machine env $machineName)
+    PROMPT=" (🐳  ${activeMachine} ) $PROMPT"
+    echo -e "$machineName created and environment setup"
+  fi
+
+
+}
