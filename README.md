@@ -14,3 +14,7 @@ Oh-my-zsh plugin that provides helper functions for working with docker machine.
 - To install in oh-my-zsh clone this repo into
  ~/.oh-my-zsh/plugins and add docker-machine to the plugins section of your zshrc.  
 - If you're not using oh-my-zsh then source this file in your zshrc by adding "source /path/to/docker-machine.zsh.plugin"
+- Using Antigen add the following to your .zshrc
+  ```
+  antigen bundle bseb/dockerMachineZsh
+  ```
